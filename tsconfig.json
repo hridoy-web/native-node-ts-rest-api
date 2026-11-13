@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // Runtime & Module System
+    "target": "ES2024", // [REQUIRED] JS target
+    "lib": ["ES2024"], // [RECOMMENDED] Built-in API types
+    "module": "NodeNext", // [REQUIRED] Node module mode
+    "moduleResolution": "NodeNext", // [RECOMMENDED] Node module lookup
+    "types": ["node"], // [RECOMMENDED] Node global types
+
+    // Project Structure
+    "rootDir": "./src", // [REQUIRED] Source root
+    "outDir": "./dist", // [REQUIRED] Build output
+
+    // Build & Debugging
+    "incremental": true, // [RECOMMENDED] Faster rebuilds
+    "tsBuildInfoFile": "./.tsbuildinfo", // [OPTIONAL] Build cache
+    "sourceMap": true, // [RECOMMENDED] Easier debugging
+    "noEmitOnError": true, // [RECOMMENDED] Stop emit on errors
+    "skipLibCheck": true, // [OPTIONAL] Skip dependency type checks
+
+    // Strict Type Safety
+    "strict": true, // [RECOMMENDED] Core strict checks
+    "noUncheckedIndexedAccess": true, // [RECOMMENDED] Check indexed values
+    "exactOptionalPropertyTypes": true, // [RECOMMENDED] Strict optional props
+    "noImplicitOverride": true, // [RECOMMENDED] Require override
+    "noImplicitReturns": true, // [RECOMMENDED] Check all return paths
+    "noFallthroughCasesInSwitch": true, // [RECOMMENDED] Catch switch fallthrough
+
+    // Module Safety
+    "verbatimModuleSyntax": true, // [RECOMMENDED] Explicit type imports
+    "isolatedModules": true, // [RECOMMENDED] Transpiler compatibility
+    "noUncheckedSideEffectImports": true, // [RECOMMENDED] Check side-effect imports
+
+    // Cross-platform Compatibility
+    "forceConsistentCasingInFileNames": true // [RECOMMENDED] Consistent filename case
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

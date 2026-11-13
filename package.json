@@ -2,9 +2,12 @@
   "name": "native-node-ts-rest-api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "type": "module",
+  "main": "dist/server.js",
   "scripts": {
-   
+   "dev": "tsx watch --env-file=.env src/server.ts",
+   "build": "tsc",
+   "start": "node --env-file=.env dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +20,6 @@
     }
   },
   "packageManager": "pnpm@12.18.0",
-  "type": "module",
   "devDependencies": {
     "@types/node": "^26.6.6",
     "tsx": "^4.23.15",
